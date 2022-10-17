@@ -1,0 +1,48 @@
+POST http://localhost:5218/breakfasts
+Content-Type: application/json
+
+{
+    "name": "Vegan Sunshine",
+    "description": "Vegan everything! Join us fo this.",
+    "startDateTime": "2022-04-08T08:00:00",
+    "endDateTime": "2022-04-08T11:00:00",
+    "savory": [
+        "Oatmeal",
+        "Avocado Toast",
+        "Omelette",
+        "Salad"
+    ],
+    "sweet": [
+        "cookie"
+    ]
+}
+###
+
+GET http://localhost:5218/breakfast/3db2a388-ba53-4ffc-bfb9-6d043045e4e9
+Content-Type: text/plain
+
+
+###
+PUT http://localhost:5218/breakfasts/3db2a388-ba53-4ffc-bfb9-6d043045e4e9
+Content-Type: application/json
+
+{
+  "name": "Vegan Sunshine",
+  "description": "Vegan everything! Join us for this awesome event.",
+  "startDateTime": "2022-04-08T08:00:00",
+  "endDateTime": "2022-04-08T11:00:00",
+  "savory": [
+    "Oatmeal",
+    "Avocado Toast",
+    "Omelette",
+    "Salad",
+    "Sparkling Water"
+  ],
+  "sweet": [
+    "cookie"
+  ]
+}
+
+###
+DELETE http://localhost:5218/breakfasts/3db2a388-ba53-4ffc-bfb9-6d043045e4e9
+Content-Type: application/json
